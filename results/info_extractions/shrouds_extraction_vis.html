@@ -1,0 +1,387 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Journal of Religion &amp; Film 
+Journal of Religion &amp; Film 
+Volume 29 
+Issue 1 April 2025 
+Article 77 
+April 2025 
+The Shrouds 
+The Shrouds 
+Elijah Siegler 
+College of Charleston, sieglere@cofc.edu 
+Follow this and additional works at: https://digitalcommons.unomaha.edu/jrf 
+ Part of the Film and Media Studies Commons, and the Religion Commons 
+Please take our feedback survey at: https://unomaha.az1.qualtrics.com/jfe/form/
+SV_8cchtFmpDyGfBLE 
+Recommended Citation 
+Recommended Citation 
+Siegler, Elijah (2025) &quot;The Shrouds,&quot; Journal of Religion &amp; Film: Vol. 29: Iss. 1, Article 77. 
+DOI: https://doi.org/10.32873/uno.dc.jrf.29.01.77 
+Available at: https://digitalcommons.unomaha.edu/jrf/vol29/iss1/77 
+This Film Review is brought to you for free and open 
+access by DigitalCommons@UNO. It has been accepted 
+for inclusion in Journal of Religion &amp; Film by an 
+authorized editor of DigitalCommons@UNO. For more 
+information, please contact 
+unodigitalcommons@unomaha.edu.
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+The Shrouds 
+The Shrouds 
+Abstract 
+Abstract 
+This is a film review of The Shrouds (2024), directed by David Cronenberg. 
+Creative Commons License 
+Creative Commons License 
+This work is licensed under a Creative Commons Attribution 4.0 License. 
+Author Notes 
+Author Notes 
+Elijah Siegler is Professor of Religious Studies at the College of Charleston. He is the co-author of Dream 
+Trippers: Global Daoism and the Predicament of Modern Culture (2017) and the editor of Coen: Framing 
+Religion in Amoral Order (2016). He is currently working on a monograph about spirituality in Asheville. 
+This film review is available in Journal of Religion &amp; Film: https://digitalcommons.unomaha.edu/jrf/vol29/iss1/77
+&quot;&quot;&quot;
+
+**Page 3**
+&quot;&quot;&quot;
+Note: I have known David Cronenberg since I was a child (see Siegler 2012 for more detail). This 
+review incorporates a conversation I had with Cronenberg on December 17, 2024, at a coffee shop 
+near his home in Toronto. 
+
+This is the story of a filmmaker from Toronto, who is <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">well off but not extravagantly wealthy</span>. He 
+drives a Tesla and lives in a comfortable but austere home. He is <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">trim and aging well</span>, with a shock 
+of white hair and <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">a dry sense of humor</span>. He is <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">an outspoken atheist</span> whose <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">loving stable relationship</span> 
+to his Jewish wife is upended when she gets sick with cancer. Their lives become regulated by 
+<span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">medical forces beyond their control</span>. His wife dies and he buries her. He feels like climbing in the 
+grave with her, but he settles for buying a plot next to hers. Eventually, he starts dating again. Out 
+of his <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">intense grief and bereavement</span> come <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">a new masterful creative project</span>. 
+This above paragraph is a summary of the backstory of The Shrouds in which a man named 
+Karsh Relilkh, played by Vincent Cassel, creates GraveTech, a burial shroud equipped with 
+cameras which allows someone to see their loved one decompose. It also describes David 
+Cronenberg, whose creative project is his new movie The Shrouds, which he wrote and directed. 
+This is Cronenberg’s twenty-third feature film and his <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">most autobiographical</span> since 1979’s The 
+Brood. Both films are <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">a response to the dissolution of Cronenberg’s marriages</span>: the earlier film 
+dramatizing a contentious divorce and custody battle with his first wife, and the new film about 
+the aftermath of the illness and death of his second wife, to whom he had been married for thirty-
+seven years. 
+Whereas The Brood is <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">a classic of body horror</span> (a genre of which Cronenberg has been 
+<span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">rightfully credited as the founder</span>), The Shrouds, if all you knew about it was that it is a noted 
+horror auteur’s <span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">deeply personal film</span> about illness, loss, and the death of a loved one, you might 
+think it would be a ghost story, or a tale of the undead. (Ghosts, hauntings, zombies, and vampires 
+1
+Siegler: The Shrouds
+Published by DigitalCommons@UNO, 2025
+&quot;&quot;&quot;
+
+**Page 4**
+&quot;&quot;&quot;
+have, of course, been used since the birth of cinema, and for thousands of years prior, to work out 
+our feelings about death, illness, and loss.) But you would be wrong. Cronenberg, the staunch 
+atheist, has, in his fifty-plus year career, never made a film with a supernatural element. And he is 
+not about to start now. (Not that he hasn’t been asked: see Siegler 2012, 1101-1102). If one must 
+pin down the genre, one might call The Shrouds “an international technothriller art film.” (For 
+other examples, see Olivier Assayas’ Demonlover (2002) and Boarding Gate (2007)). 
+We learn the backstory in the first sequence of the movie—<span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">an awkward blind date</span>. The 
+plot kicks into gear when the GraveTech technology reveals to Karsh that his wife Becca’s corpse 
+is growing metallic protuberances and when Karsh’s hi-tech graveyard is vandalized. Who is 
+responsible for these violations? <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">Icelandic eco-terrorists who use Runic symbols? A nefarious data-
+stealing Chinese textile corporation called Shining Cloth (fast fashion meets ByteDance meets the 
+Shining Path)? Citadel Technologies, a Hungarian-Canadian conglomerate, fronted by a seductive 
+French-Korean woman?</span> 
+
+We are in familiar Cronenbergian territory. As I wrote in 2012, “<span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">secretive, isolated 
+communities with authoritative, charismatic leaders and dangerous ideologies are constant features 
+in most of his original scripts</span> […] the plots advance because of warring “cults” (Siegler 2012, 
+1108).   
+In The Shrouds, <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">these groups, who may be either competing or collaborating, seem to be 
+part of a shadowy multinational conspiracy</span>. <span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">These global concerns are the clearest expression of 
+Cronenberg’s cosmopolitanism</span> (even more than his 2012 film, titled Cosmopolis) but, unlike say, 
+Videodrome’s Spectacular Optical or The Brood’s Somafree Institute, they are spoken of but rarely 
+seen. Clearly, Cronenberg, in his late career phase, <span class="lx-highlight" data-idx="18" style="background-color:#C8E6C9;">feels comfortable with a sketched-in plot</span>.1 In 
+one of the film’s several <span class="lx-highlight" data-idx="19" style="background-color:#C8E6C9;">subtle touches of black humor</span>, the real villain is (probably) revealed to 
+2
+Journal of Religion &amp; Film, Vol. 29 [2025], Iss. 1, Art. 77
+https://digitalcommons.unomaha.edu/jrf/vol29/iss1/77
+DOI: https://doi.org/10.32873/uno.dc.jrf.29.01.77
+&quot;&quot;&quot;
+
+**Page 5**
+&quot;&quot;&quot;
+be Becca’s oncologist, the mostly offscreen Dr. Jerry Eckler, who teaches classes on “the 
+psychology of healing.” 
+
+Karsh refers to the question of who violated his wife’s body as <span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">a “classic detection puzzle”</span> 
+but <span class="lx-highlight" data-idx="21" style="background-color:#D2E3FC;">the audience probably doesn’t care as much about the detective story as it does about the 
+<span class="lx-highlight" data-idx="22" style="background-color:#C8E6C9;">resonant images and deep emotions</span></span>, which I felt most clearly in scenes with Diane Kruger as Becca 
+<span class="lx-highlight" data-idx="23" style="background-color:#C8E6C9;">appearing nude and evermore disfigured in Karsh’s dreams</span>. (She is emphatically not a ghost.) 
+<span class="lx-highlight" data-idx="24" style="background-color:#C8E6C9;">Becca’s absence/presence is also felt</span> in scenes with Kruger as Becca’s twin Terry, and as the voice 
+of <span class="lx-highlight" data-idx="25" style="background-color:#C8E6C9;">the untrustworthy AI animated avatar</span>, Hunny. Cronenberg, of course, is interested in the 
+physical effect of emotions as exemplified in the opening line of movie, spoken by Karsh’s dentist: 
+<span class="lx-highlight" data-idx="26" style="background-color:#C8E6C9;">“Grief is rotting your teeth.”</span> Relatedly, <span class="lx-highlight" data-idx="27" style="background-color:#C8E6C9;">one source of the powerful emotion coursing through The 
+Shrouds comes from Cronenberg’s self-recognition of his own mortality</span> (a “relikh?!”). (As other 
+film critics have pointed out, several other films made in 2024 <span class="lx-highlight" data-idx="28" style="background-color:#C8E6C9;">share this theme</span>.2) 
+The plot, the imagery, and the emotional themes of this film <span class="lx-highlight" data-idx="29" style="background-color:#C8E6C9;">center on graves and bodies 
+being desecrated</span>—and <span class="lx-highlight" data-idx="30" style="background-color:#C8E6C9;">“desecration” is a word that is notably used in this movie</span>. “To desecrate” 
+means to violate something sacred, and knowing this fact,  along with the film’s autobiographical 
+nature, it should come as no surprise that <span class="lx-highlight" data-idx="31" style="background-color:#C8E6C9;">The Shrouds stands as Cronenberg’s most Jewish film</span>. 
+True, Cronenberg does not deign to make his stand-in, Karsh, come from a secular Jewish 
+background, as Cronenberg himself does. Instead, Karsh tells his blind date, he is “some 
+Belarusian Eastern Orthodox thing.” But elsewhere, <span class="lx-highlight" data-idx="32" style="background-color:#C8E6C9;">Jewishness abounds</span>—in the allusions to 
+Jewish food (a way many secular Jews relate to their tradition), including Guy Pearce as tech nerd 
+Maury chowing down on Matzoh ball soup and pastrami, and references to United Dairy and Fat 
+Pasha, two actual Jewish-identified restaurants in Toronto. (Many of <span class="lx-highlight" data-idx="33" style="background-color:#C8E6C9;">Cronenberg’s films are 
+explicitly set in Toronto</span>, but <span class="lx-highlight" data-idx="34" style="background-color:#C8E6C9;">The Shrouds is the first to be set in Jewish Toronto</span>.) As well,  Karsh 
+3
+Siegler: The Shrouds
+Published by DigitalCommons@UNO, 2025
+&quot;&quot;&quot;
+
+**Page 6**
+&quot;&quot;&quot;
+deflects Terry’s conspiracy theorizing by referencing Stalin’s paranoid antisemitic dictum, 
+“(Jewish) doctors plot.” And most resonantly, we see Jewishness in the Hebrew letters carved on 
+Becca’s gravestone.  
+But <span class="lx-highlight" data-idx="35" style="background-color:#C8E6C9;">this is not a case of an aging artist “finding God” or “returning to his roots.”</span> <span class="lx-highlight" data-idx="36" style="background-color:#C8E6C9;">If The 
+Shrouds is Cronenberg’s most Jewish film it is also his most atheist.</span> <span class="lx-highlight" data-idx="37" style="background-color:#C8E6C9;">Cronenberg, in his public 
+statements, has always been among the most avowedly atheist filmmakers, but his characters were 
+not. Until now.</span> In the first sequence of the movie, <span class="lx-highlight" data-idx="38" style="background-color:#C8E6C9;">Karsh refers to himself a “non-observant atheist”</span> 
+and <span class="lx-highlight" data-idx="39" style="background-color:#C8E6C9;">calls the shroud of Turin a fake.</span> Later, speculating his private graveyard might have been 
+vandalized by religious extremists, he notes that <span class="lx-highlight" data-idx="40" style="background-color:#C8E6C9;">“we’ve been called techno-atheist infidels.”</span> 
+In some ways, <span class="lx-highlight" data-idx="41" style="background-color:#C8E6C9;">The Shrouds embodies a very old debate between tradition and modernity 
+or religion and atheism</span>, enacted at multiple levels, not least in a seemingly throwaway bit of 
+dialogue about the “burial versus cremation” debate: <span class="lx-highlight" data-idx="42" style="background-color:#C8E6C9;">burial being necessary in the Jewish tradition, 
+while cremation being seen as more ecological and modern.</span> Cronenberg, wisely, does not presume 
+to settle this debate, but simply records how it plays out on an emotional level—through <span class="lx-highlight" data-idx="43" style="background-color:#D2E3FC;"><span class="lx-highlight" data-idx="44" style="background-color:#C8E6C9;">a powerful 
+depiction of grief, yes, but also of confusion and anger</span> (at a medical establishment that robs us of 
+our power, among other indignities</span>).  And finally, <span class="lx-highlight" data-idx="45" style="background-color:#D2E3FC;">as shown in the last scene of Karsh flying across 
+the ocean towards an uncertain future, there is <span class="lx-highlight" data-idx="46" style="background-color:#C8E6C9;">a glimmer of hopefulness towards whatever comes 
+next</span></span>. 
+
+
+1 Or Dangling subplots and antagonists referred to but never seen, which point to the fact that The Shrouds was written 
+to be the pilot for a Netflix series. (The series itself would have shown more of these groups, and, Cronenberg told 
+me, more about death rituals of various religions.)  
+
+2 I owe this insight to John Semley writing in The Baffler. Similarly, Marya Gates on the Filmspotting Podcast 
+thoughtfully places The Shrouds with two other 2024 films about losing a longtime spouse, made by aging directors 
+who were also in the process of losing spouses: Oh Canada from Paul Schrader and Megalopolis from Francis Ford 
+Coppola. 
+
+4
+Journal of Religion &amp; Film, Vol. 29 [2025], Iss. 1, Art. 77
+https://digitalcommons.unomaha.edu/jrf/vol29/iss1/77
+DOI: https://doi.org/10.32873/uno.dc.jrf.29.01.77
+&quot;&quot;&quot;
+
+**Page 7**
+&quot;&quot;&quot;
+References 
+
+
+Gates, Marya. Guest on “Filmspotting” Podcast, December 19, 2024. 
+https://www.filmspotting.net/episodes-archive/2024/12/19/995-top-10-of-2024-roundtable-wmichael-phillips-and-
+marya-gates 
+
+Semley, John. “No, country for old men” The Baffler Dec 17, 2024. 
+https://thebaffler.com/latest/no-country-for-old-men-semley. 
+
+Siegler, Elijah. “David Cronenberg: The Secular Auteur as Critic of Religion.” Journal of the American Academy of 
+Religion, vol. 80, no. 4, 2012, pp. 1098–112. 
+
+5
+Siegler: The Shrouds
+Published by DigitalCommons@UNO, 2025
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="46" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/47</span> |
+          Pos <span id="posInfo">[2009-2047]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "well off but not extravagantly wealthy", "color": "#C8E6C9", "startPos": 2009, "endPos": 2047, "beforeText": "tion I had with Cronenberg on December 17, 2024, at a coffee shop \nnear his home in Toronto. \n \nThis is the story of a filmmaker from Toronto, who is ", "extractionText": "well off but not extravagantly wealthy", "afterText": ". He \ndrives a Tesla and lives in a comfortable but austere home. He is trim and aging well, with a shock \nof white hair and a dry sense of humor. He ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u4eba\u7269\u7d93\u6fdf\u72c0\u6cc1</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5c0f\u5eb7\u4f46\u975e\u5bcc\u88d5</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "trim and aging well", "color": "#C8E6C9", "startPos": 2119, "endPos": 2138, "beforeText": "ory of a filmmaker from Toronto, who is well off but not extravagantly wealthy. He \ndrives a Tesla and lives in a comfortable but austere home. He is ", "extractionText": "trim and aging well", "afterText": ", with a shock \nof white hair and a dry sense of humor. He is an outspoken atheist whose loving stable relationship \nto his Jewish wife is upended whe", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u4eba\u7269\u5916\u8c8c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u8eab\u6750\u52fb\u7a31\u4e14\u4fdd\u990a\u5f97\u5b9c</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "a dry sense of humor", "color": "#C8E6C9", "startPos": 2172, "endPos": 2192, "beforeText": "not extravagantly wealthy. He \ndrives a Tesla and lives in a comfortable but austere home. He is trim and aging well, with a shock \nof white hair and ", "extractionText": "a dry sense of humor", "afterText": ". He is an outspoken atheist whose loving stable relationship \nto his Jewish wife is upended when she gets sick with cancer. Their lives become regula", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u4eba\u7269\u7279\u8cea</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u51b7\u5e7d\u9ed8</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "an outspoken atheist", "color": "#C8E6C9", "startPos": 2200, "endPos": 2220, "beforeText": "e \ndrives a Tesla and lives in a comfortable but austere home. He is trim and aging well, with a shock \nof white hair and a dry sense of humor. He is ", "extractionText": "an outspoken atheist", "afterText": " whose loving stable relationship \nto his Jewish wife is upended when she gets sick with cancer. Their lives become regulated by \nmedical forces beyon", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u4eba\u7269\u4fe1\u4ef0</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u76f4\u8a00\u4e0d\u8af1\u7684\u7121\u795e\u8ad6\u8005</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "loving stable relationship", "color": "#C8E6C9", "startPos": 2227, "endPos": 2253, "beforeText": " in a comfortable but austere home. He is trim and aging well, with a shock \nof white hair and a dry sense of humor. He is an outspoken atheist whose ", "extractionText": "loving stable relationship", "afterText": " \nto his Jewish wife is upended when she gets sick with cancer. Their lives become regulated by \nmedical forces beyond their control. His wife dies an", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u4eba\u7269\u95dc\u4fc2</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5145\u6eff\u611b\u610f\u4e14\u7a69\u5b9a\u7684\u95dc\u4fc2</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "medical forces beyond their control", "color": "#C8E6C9", "startPos": 2350, "endPos": 2385, "beforeText": "an outspoken atheist whose loving stable relationship \nto his Jewish wife is upended when she gets sick with cancer. Their lives become regulated by \n", "extractionText": "medical forces beyond their control", "afterText": ". His wife dies and he buries her. He feels like climbing in the \ngrave with her, but he settles for buying a plot next to hers. Eventually, he starts", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u91ab\u7642\u72c0\u6cc1</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u7121\u6cd5\u63a7\u5236\u7684\u91ab\u7642\u56e0\u7d20</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "intense grief and bereavement", "color": "#C8E6C9", "startPos": 2562, "endPos": 2591, "beforeText": "es her. He feels like climbing in the \ngrave with her, but he settles for buying a plot next to hers. Eventually, he starts dating again. Out \nof his ", "extractionText": "intense grief and bereavement", "afterText": " come a new masterful creative project. \nThis above paragraph is a summary of the backstory of The Shrouds in which a man named \nKarsh Relilkh, played", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u4eba\u7269\u60c5\u611f</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5f37\u70c8\u7684\u60b2\u50b7\u548c\u5931\u843d</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "a new masterful creative project", "color": "#C8E6C9", "startPos": 2597, "endPos": 2629, "beforeText": "he \ngrave with her, but he settles for buying a plot next to hers. Eventually, he starts dating again. Out \nof his intense grief and bereavement come ", "extractionText": "a new masterful creative project", "afterText": ". \nThis above paragraph is a summary of the backstory of The Shrouds in which a man named \nKarsh Relilkh, played by Vincent Cassel, creates GraveTech,", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u5275\u4f5c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5168\u65b0\u7684\u5927\u5e2b\u7d1a\u5275\u4f5c\u9805\u76ee</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "most autobiographical", "color": "#C8E6C9", "startPos": 3049, "endPos": 3070, "beforeText": "Cronenberg, whose creative project is his new movie The Shrouds, which he wrote and directed. \nThis is Cronenberg\u2019s twenty-third feature film and his ", "extractionText": "most autobiographical", "afterText": " since 1979\u2019s The \nBrood. Both films are a response to the dissolution of Cronenberg\u2019s marriages: the earlier film \ndramatizing a contentious divorce ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u6700\u81ea\u50b3\u6027</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "a response to the dissolution of Cronenberg\u2019s marriages", "color": "#C8E6C9", "startPos": 3111, "endPos": 3166, "beforeText": "s, which he wrote and directed. \nThis is Cronenberg\u2019s twenty-third feature film and his most autobiographical since 1979\u2019s The \nBrood. Both films are ", "extractionText": "a response to the dissolution of Cronenberg\u2019s marriages", "afterText": ": the earlier film \ndramatizing a contentious divorce and custody battle with his first wife, and the new film about \nthe aftermath of the illness and", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71\u4e3b\u984c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5c0d\u514b\u502b\u5821\u5a5a\u59fb\u7834\u88c2\u7684\u56de\u61c9</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "a classic of body horror", "color": "#C8E6C9", "startPos": 3418, "endPos": 3442, "beforeText": "new film about \nthe aftermath of the illness and death of his second wife, to whom he had been married for thirty-\nseven years. \nWhereas The Brood is ", "extractionText": "a classic of body horror", "afterText": " (a genre of which Cronenberg has been \nrightfully credited as the founder), The Shrouds, if all you knew about it was that it is a noted \nhorror aute", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71\u985e\u578b</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u8eab\u9ad4\u6050\u6016\u7684\u7d93\u5178</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "rightfully credited as the founder", "color": "#C8E6C9", "startPos": 3482, "endPos": 3516, "beforeText": "cond wife, to whom he had been married for thirty-\nseven years. \nWhereas The Brood is a classic of body horror (a genre of which Cronenberg has been \n", "extractionText": "rightfully credited as the founder", "afterText": "), The Shrouds, if all you knew about it was that it is a noted \nhorror auteur\u2019s deeply personal film about illness, loss, and the death of a loved on", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u5c0e\u6f14\u8072\u8b7d</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5275\u59cb\u4eba\u7a31\u865f\u5be6\u81f3\u540d\u6b78</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "deeply personal film", "color": "#C8E6C9", "startPos": 3597, "endPos": 3617, "beforeText": "enre of which Cronenberg has been \nrightfully credited as the founder), The Shrouds, if all you knew about it was that it is a noted \nhorror auteur\u2019s ", "extractionText": "deeply personal film", "afterText": " about illness, loss, and the death of a loved one, you might \nthink it would be a ghost story, or a tale of the undead. (Ghosts, hauntings, zombies, ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u6975\u5ea6\u500b\u4eba\u5316\u7684\u96fb\u5f71</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "an awkward blind date", "color": "#C8E6C9", "startPos": 4498, "endPos": 4519, "beforeText": ".\u201d (For \nother examples, see Olivier Assayas\u2019 Demonlover (2002) and Boarding Gate (2007)). \nWe learn the backstory in the first sequence of the movie\u2014", "extractionText": "an awkward blind date", "afterText": ". The \nplot kicks into gear when the GraveTech technology reveals to Karsh that his wife Becca\u2019s corpse \nis growing metallic protuberances and when Ka", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u6545\u4e8b\u60c5\u7bc0</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5c37\u7684\u76f8\u89aa</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "Icelandic eco-terrorists who use Runic symbols? A nefarious data-stealing Chinese textile corporation called Shining Cloth (fast fashion meets ByteDance meets the Shining Path)? Citadel Technologies, a Hungarian-Canadian conglomerate, fronted by a seductive French-Korean woman?", "color": "#C8E6C9", "startPos": 4750, "endPos": 5031, "beforeText": "is wife Becca\u2019s corpse \nis growing metallic protuberances and when Karsh\u2019s hi-tech graveyard is vandalized. Who is \nresponsible for these violations? ", "extractionText": "Icelandic eco-terrorists who use Runic symbols? A nefarious data-\nstealing Chinese textile corporation called Shining Cloth (fast fashion meets ByteDance meets the \nShining Path)? Citadel Technologies, a Hungarian-Canadian conglomerate, fronted by a seductive \nFrench-Korean woman?", "afterText": " \n \nWe are in familiar Cronenbergian territory. As I wrote in 2012, \u201csecretive, isolated \ncommunities with authoritative, charismatic leaders and dang", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u60c5\u7bc0</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u6f5b\u5728\u7684\u9670\u8b00\u8005</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "secretive, isolated communities with authoritative, charismatic leaders and dangerous ideologies are constant features in most of his original scripts", "color": "#C8E6C9", "startPos": 5100, "endPos": 5252, "beforeText": ", a Hungarian-Canadian conglomerate, fronted by a seductive \nFrench-Korean woman? \n \nWe are in familiar Cronenbergian territory. As I wrote in 2012, \u201c", "extractionText": "secretive, isolated \ncommunities with authoritative, charismatic leaders and dangerous ideologies are constant features \nin most of his original scripts", "afterText": " [\u2026] the plots advance because of warring \u201ccults\u201d (Siegler 2012, \n1108).   \nIn The Shrouds, these groups, who may be either competing or collaborating", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u5287\u672c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u79d8\u5bc6\u3001\u5b64\u7acb\u7684\u793e\u7fa4\uff0c\u6709\u6b0a\u5a01\u3001\u6709\u9b45\u529b\u7684\u9818\u5c0e\u8005\u548c\u5371\u96aa\u7684\u610f\u8b58\u5f62\u614b</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "these groups, who may be either competing or collaborating, seem to be part of a shadowy multinational conspiracy", "color": "#C8E6C9", "startPos": 5344, "endPos": 5458, "beforeText": "ies are constant features \nin most of his original scripts [\u2026] the plots advance because of warring \u201ccults\u201d (Siegler 2012, \n1108).   \nIn The Shrouds, ", "extractionText": "these groups, who may be either competing or collaborating, seem to be \npart of a shadowy multinational conspiracy", "afterText": ". These global concerns are the clearest expression of \nCronenberg\u2019s cosmopolitanism (even more than his 2012 film, titled Cosmopolis) but, unlike say", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u60c5\u7bc0</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5f71\u5b50\u8de8\u570b\u9670\u8b00</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "these global concerns are the clearest expression of Cronenberg\u2019s cosmopolitanism", "color": "#C8E6C9", "startPos": 5460, "endPos": 5542, "beforeText": " 2012, \n1108).   \nIn The Shrouds, these groups, who may be either competing or collaborating, seem to be \npart of a shadowy multinational conspiracy. ", "extractionText": "These global concerns are the clearest expression of \nCronenberg\u2019s cosmopolitanism", "afterText": " (even more than his 2012 film, titled Cosmopolis) but, unlike say, \nVideodrome\u2019s Spectacular Optical or The Brood\u2019s Somafree Institute, they are spok", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u4e3b\u984c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5168\u7403\u95dc\u5207\u662f\u514b\u502b\u5821\u5b87\u5b99\u4e3b\u7fa9\u6700\u6e05\u6670\u7684\u8868\u9054</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "feels comfortable with a sketched-in plot", "color": "#C8E6C9", "startPos": 5763, "endPos": 5804, "beforeText": "deodrome\u2019s Spectacular Optical or The Brood\u2019s Somafree Institute, they are spoken of but rarely \nseen. Clearly, Cronenberg, in his late career phase, ", "extractionText": "feels comfortable with a sketched-in plot", "afterText": ".1 In \none of the film\u2019s several subtle touches of black humor, the real villain is (probably) revealed to \n2\nJournal of Religion &amp; Film, Vol. 29 [202", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u6545\u4e8b\u60c5\u7bc0</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u8349\u5716\u5f0f\u7684\u60c5\u7bc0</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "subtle touches of black humor", "color": "#C8E6C9", "startPos": 5837, "endPos": 5866, "beforeText": " spoken of but rarely \nseen. Clearly, Cronenberg, in his late career phase, feels comfortable with a sketched-in plot.1 In \none of the film\u2019s several ", "extractionText": "subtle touches of black humor", "afterText": ", the real villain is (probably) revealed to \n2\nJournal of Religion &amp; Film, Vol. 29 [2025], Iss. 1, Art. 77\nhttps://digitalcommons.unomaha.edu/jrf/vol", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u9ed1\u8272\u5e7d\u9ed8</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5de7\u5999\u7684\u9ed1\u8272\u5e7d\u9ed8</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "a \u201cclassic detection puzzle\u201d", "color": "#C8E6C9", "startPos": 6279, "endPos": 6307, "beforeText": "y offscreen Dr. Jerry Eckler, who teaches classes on \u201cthe \npsychology of healing.\u201d \n \nKarsh refers to the question of who violated his wife\u2019s body as ", "extractionText": "a \u201cclassic detection puzzle\u201d", "afterText": " \nbut the audience probably doesn\u2019t care as much about the detective story as it does about the \nresonant images and deep emotions, which I felt most ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u5075\u63a2\u6545\u4e8b</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u7d93\u5178\u5075\u63a2\u8b0e\u984c</span>}</div>"}, {"index": 21, "class": "audience_impact", "text": "the audience probably doesn\u2019t care as much about the detective story as it does about the resonant images and deep emotions", "color": "#D2E3FC", "startPos": 6313, "endPos": 6437, "beforeText": "teaches classes on \u201cthe \npsychology of healing.\u201d \n \nKarsh refers to the question of who violated his wife\u2019s body as a \u201cclassic detection puzzle\u201d \nbut ", "extractionText": "the audience probably doesn\u2019t care as much about the detective story as it does about the \nresonant images and deep emotions", "afterText": ", which I felt most clearly in scenes with Diane Kruger as Becca \nappearing nude and evermore disfigured in Karsh\u2019s dreams. (She is emphatically not a", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">\u5171\u9cf4, \u6df1\u523b\u60c5\u611f</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">\u5171\u9cf4\u7684\u5f71\u50cf\u548c\u6df1\u523b\u7684\u60c5\u611f</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">\u89c0\u773e</span>}</div>"}, {"index": 22, "class": "opinion_statement", "text": "resonant images and deep emotions", "color": "#C8E6C9", "startPos": 6404, "endPos": 6437, "beforeText": "lated his wife\u2019s body as a \u201cclassic detection puzzle\u201d \nbut the audience probably doesn\u2019t care as much about the detective story as it does about the \n", "extractionText": "resonant images and deep emotions", "afterText": ", which I felt most clearly in scenes with Diane Kruger as Becca \nappearing nude and evermore disfigured in Karsh\u2019s dreams. (She is emphatically not a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u5f71\u50cf\u548c\u60c5\u611f</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5171\u9cf4\u7684\u5f71\u50cf\u548c\u6df1\u523b\u7684\u60c5\u611f</span>}</div>"}, {"index": 23, "class": "opinion_statement", "text": "appearing nude and evermore disfigured in Karsh\u2019s dreams", "color": "#C8E6C9", "startPos": 6503, "endPos": 6559, "beforeText": "ch about the detective story as it does about the \nresonant images and deep emotions, which I felt most clearly in scenes with Diane Kruger as Becca \n", "extractionText": "appearing nude and evermore disfigured in Karsh\u2019s dreams", "afterText": ". (She is emphatically not a ghost.) \nBecca\u2019s absence/presence is also felt in scenes with Kruger as Becca\u2019s twin Terry, and as the voice \nof the untr", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u89d2\u8272\u5448\u73fe</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u8d64\u88f8\u4e14\u8d8a\u4f86\u8d8a\u7578\u5f62</span>}</div>"}, {"index": 24, "class": "opinion_statement", "text": "Becca\u2019s absence/presence is also felt", "color": "#C8E6C9", "startPos": 6597, "endPos": 6634, "beforeText": "felt most clearly in scenes with Diane Kruger as Becca \nappearing nude and evermore disfigured in Karsh\u2019s dreams. (She is emphatically not a ghost.) \n", "extractionText": "Becca\u2019s absence/presence is also felt", "afterText": " in scenes with Kruger as Becca\u2019s twin Terry, and as the voice \nof the untrustworthy AI animated avatar, Hunny. Cronenberg, of course, is interested i", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u89d2\u8272\u5b58\u5728\u611f</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u7f3a\u5e2d/\u5b58\u5728\u611f</span>}</div>"}, {"index": 25, "class": "opinion_statement", "text": "the untrustworthy AI animated avatar", "color": "#C8E6C9", "startPos": 6701, "endPos": 6737, "beforeText": "s dreams. (She is emphatically not a ghost.) \nBecca\u2019s absence/presence is also felt in scenes with Kruger as Becca\u2019s twin Terry, and as the voice \nof ", "extractionText": "the untrustworthy AI animated avatar", "afterText": ", Hunny. Cronenberg, of course, is interested in the \nphysical effect of emotions as exemplified in the opening line of movie, spoken by Karsh\u2019s denti", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">AI\u865b\u64ec\u89d2\u8272</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u4e0d\u53ef\u4fe1\u7684AI\u865b\u64ec\u89d2\u8272</span>}</div>"}, {"index": 26, "class": "opinion_statement", "text": "\u201cGrief is rotting your teeth.\u201d", "color": "#C8E6C9", "startPos": 6892, "endPos": 6922, "beforeText": "ny. Cronenberg, of course, is interested in the \nphysical effect of emotions as exemplified in the opening line of movie, spoken by Karsh\u2019s dentist: \n", "extractionText": "\u201cGrief is rotting your teeth.\u201d", "afterText": " Relatedly, one source of the powerful emotion coursing through The \nShrouds comes from Cronenberg\u2019s self-recognition of his own mortality (a \u201crelikh?", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u53f0\u8a5e</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u60b2\u50b7\u6b63\u5728\u8150\u8755\u4f60\u7684\u7259\u9f52</span>}</div>"}, {"index": 27, "class": "opinion_statement", "text": "one source of the powerful emotion coursing through The Shrouds comes from Cronenberg\u2019s self-recognition of his own mortality", "color": "#C8E6C9", "startPos": 6934, "endPos": 7060, "beforeText": "n the \nphysical effect of emotions as exemplified in the opening line of movie, spoken by Karsh\u2019s dentist: \n\u201cGrief is rotting your teeth.\u201d Relatedly, ", "extractionText": "one source of the powerful emotion coursing through The \nShrouds comes from Cronenberg\u2019s self-recognition of his own mortality", "afterText": " (a \u201crelikh?!\u201d). (As other \nfilm critics have pointed out, several other films made in 2024 share this theme.2) \nThe plot, the imagery, and the emotio", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u60c5\u611f\u4f86\u6e90</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5c0d\u81ea\u8eab\u6b7b\u4ea1\u7684\u8a8d\u77e5</span>}</div>"}, {"index": 28, "class": "opinion_statement", "text": "share this theme", "color": "#C8E6C9", "startPos": 7152, "endPos": 7168, "beforeText": "es from Cronenberg\u2019s self-recognition of his own mortality (a \u201crelikh?!\u201d). (As other \nfilm critics have pointed out, several other films made in 2024 ", "extractionText": "share this theme", "afterText": ".2) \nThe plot, the imagery, and the emotional themes of this film center on graves and bodies \nbeing desecrated\u2014and \u201cdesecration\u201d is a word that is no", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u4e3b\u984c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5171\u4eab\u6b64\u4e3b\u984c</span>}</div>"}, {"index": 29, "class": "opinion_statement", "text": "center on graves and bodies being desecrated", "color": "#C8E6C9", "startPos": 7234, "endPos": 7279, "beforeText": "er \nfilm critics have pointed out, several other films made in 2024 share this theme.2) \nThe plot, the imagery, and the emotional themes of this film ", "extractionText": "center on graves and bodies \nbeing desecrated", "afterText": "\u2014and \u201cdesecration\u201d is a word that is notably used in this movie. \u201cTo desecrate\u201d \nmeans to violate something sacred, and knowing this fact,  along with", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u60c5\u7bc0\u4e3b\u984c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u58b3\u5893\u548c\u5c4d\u9ad4\u88ab\u893b\u7006</span>}</div>"}, {"index": 30, "class": "opinion_statement", "text": "\u201cdesecration\u201d is a word that is notably used in this movie", "color": "#C8E6C9", "startPos": 7284, "endPos": 7342, "beforeText": "ilms made in 2024 share this theme.2) \nThe plot, the imagery, and the emotional themes of this film center on graves and bodies \nbeing desecrated\u2014and ", "extractionText": "\u201cdesecration\u201d is a word that is notably used in this movie", "afterText": ". \u201cTo desecrate\u201d \nmeans to violate something sacred, and knowing this fact,  along with the film\u2019s autobiographical \nnature, it should come as no surp", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u8a5e\u5f59\u4f7f\u7528</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u893b\u7006</span>}</div>"}, {"index": 31, "class": "opinion_statement", "text": "The Shrouds stands as Cronenberg\u2019s most Jewish film", "color": "#C8E6C9", "startPos": 7502, "endPos": 7553, "beforeText": "crate\u201d \nmeans to violate something sacred, and knowing this fact,  along with the film\u2019s autobiographical \nnature, it should come as no surprise that ", "extractionText": "The Shrouds stands as Cronenberg\u2019s most Jewish film", "afterText": ". \nTrue, Cronenberg does not deign to make his stand-in, Karsh, come from a secular Jewish \nbackground, as Cronenberg himself does. Instead, Karsh tel", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71\u6027\u8cea</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u514b\u502b\u5821\u6700\u7336\u592a\u7684\u96fb\u5f71</span>}</div>"}, {"index": 32, "class": "opinion_statement", "text": "Jewishness abounds", "color": "#C8E6C9", "startPos": 7786, "endPos": 7804, "beforeText": " Jewish \nbackground, as Cronenberg himself does. Instead, Karsh tells his blind date, he is \u201csome \nBelarusian Eastern Orthodox thing.\u201d But elsewhere, ", "extractionText": "Jewishness abounds", "afterText": "\u2014in the allusions to \nJewish food (a way many secular Jews relate to their tradition), including Guy Pearce as tech nerd \nMaury chowing down on Matzoh", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u7336\u592a\u5143\u7d20</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u6bd4\u6bd4\u7686\u662f</span>}</div>"}, {"index": 33, "class": "opinion_statement", "text": "Cronenberg\u2019s films are explicitly set in Toronto", "color": "#C8E6C9", "startPos": 8088, "endPos": 8137, "beforeText": "g down on Matzoh ball soup and pastrami, and references to United Dairy and Fat \nPasha, two actual Jewish-identified restaurants in Toronto. (Many of ", "extractionText": "Cronenberg\u2019s films are \nexplicitly set in Toronto", "afterText": ", but The Shrouds is the first to be set in Jewish Toronto.) As well,  Karsh \n3\nSiegler: The Shrouds\nPublished by DigitalCommons@UNO, 2025\n&quot;&quot;&quot;\n\n**Page", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71\u80cc\u666f</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u660e\u78ba\u8a2d\u5b9a\u5728\u591a\u502b\u591a</span>}</div>"}, {"index": 34, "class": "opinion_statement", "text": "The Shrouds is the first to be set in Jewish Toronto", "color": "#C8E6C9", "startPos": 8143, "endPos": 8195, "beforeText": " to United Dairy and Fat \nPasha, two actual Jewish-identified restaurants in Toronto. (Many of Cronenberg\u2019s films are \nexplicitly set in Toronto, but ", "extractionText": "The Shrouds is the first to be set in Jewish Toronto", "afterText": ".) As well,  Karsh \n3\nSiegler: The Shrouds\nPublished by DigitalCommons@UNO, 2025\n&quot;&quot;&quot;\n\n**Page 6**\n&quot;&quot;&quot;\ndeflects Terry\u2019s conspiracy theorizing by referen", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71\u80cc\u666f</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u9996\u90e8\u8a2d\u5b9a\u5728\u7336\u592a\u4eba\u591a\u502b\u591a\u7684\u96fb\u5f71</span>}</div>"}, {"index": 35, "class": "opinion_statement", "text": "this is not a case of an aging artist \u201cfinding God\u201d or \u201creturning to his roots.\u201d", "color": "#C8E6C9", "startPos": 8512, "endPos": 8592, "beforeText": "anoid antisemitic dictum, \n\u201c(Jewish) doctors plot.\u201d And most resonantly, we see Jewishness in the Hebrew letters carved on \nBecca\u2019s gravestone.  \nBut ", "extractionText": "this is not a case of an aging artist \u201cfinding God\u201d or \u201creturning to his roots.\u201d", "afterText": " If The \nShrouds is Cronenberg\u2019s most Jewish film it is also his most atheist. Cronenberg, in his public \nstatements, has always been among the most a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71\u4e3b\u984c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u4e26\u975e\u5c0b\u627e\u4e0a\u5e1d\u6216\u56de\u6b78\u50b3\u7d71</span>}</div>"}, {"index": 36, "class": "opinion_statement", "text": "If The Shrouds is Cronenberg\u2019s most Jewish film it is also his most atheist.", "color": "#C8E6C9", "startPos": 8593, "endPos": 8670, "beforeText": "ewishness in the Hebrew letters carved on \nBecca\u2019s gravestone.  \nBut this is not a case of an aging artist \u201cfinding God\u201d or \u201creturning to his roots.\u201d ", "extractionText": "If The \nShrouds is Cronenberg\u2019s most Jewish film it is also his most atheist.", "afterText": " Cronenberg, in his public \nstatements, has always been among the most avowedly atheist filmmakers, but his characters were \nnot. Until now. In the fi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71\u4e3b\u984c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u6700\u7336\u592a\u4e5f\u6700\u7121\u795e\u8ad6</span>}</div>"}, {"index": 37, "class": "opinion_statement", "text": "Cronenberg, in his public statements, has always been among the most avowedly atheist filmmakers, but his characters were not. Until now.", "color": "#C8E6C9", "startPos": 8671, "endPos": 8810, "beforeText": "ot a case of an aging artist \u201cfinding God\u201d or \u201creturning to his roots.\u201d If The \nShrouds is Cronenberg\u2019s most Jewish film it is also his most atheist. ", "extractionText": "Cronenberg, in his public \nstatements, has always been among the most avowedly atheist filmmakers, but his characters were \nnot. Until now.", "afterText": " In the first sequence of the movie, Karsh refers to himself a \u201cnon-observant atheist\u201d \nand calls the shroud of Turin a fake. Later, speculating his p", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u5c0e\u6f14\u98a8\u683c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5c0e\u6f14\u516c\u958b\u8072\u660e\u662f\u7121\u795e\u8ad6\u8005\uff0c\u4f46\u89d2\u8272\u4e26\u975e\u5982\u6b64\uff0c\u76f4\u5230\u73fe\u5728</span>}</div>"}, {"index": 38, "class": "opinion_statement", "text": "Karsh refers to himself a \u201cnon-observant atheist\u201d", "color": "#C8E6C9", "startPos": 8847, "endPos": 8896, "beforeText": "\nstatements, has always been among the most avowedly atheist filmmakers, but his characters were \nnot. Until now. In the first sequence of the movie, ", "extractionText": "Karsh refers to himself a \u201cnon-observant atheist\u201d", "afterText": " \nand calls the shroud of Turin a fake. Later, speculating his private graveyard might have been \nvandalized by religious extremists, he notes that \u201cw", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u89d2\u8272\u8a2d\u5b9a</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u4e0d\u5b88\u6559\u898f\u7684\u7121\u795e\u8ad6\u8005</span>}</div>"}, {"index": 39, "class": "opinion_statement", "text": "calls the shroud of Turin a fake.", "color": "#C8E6C9", "startPos": 8902, "endPos": 8935, "beforeText": "heist filmmakers, but his characters were \nnot. Until now. In the first sequence of the movie, Karsh refers to himself a \u201cnon-observant atheist\u201d \nand ", "extractionText": "calls the shroud of Turin a fake.", "afterText": " Later, speculating his private graveyard might have been \nvandalized by religious extremists, he notes that \u201cwe\u2019ve been called techno-atheist infidel", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u89d2\u8272\u89c0\u9ede</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u7a31\u675c\u6797\u88f9\u5c4d\u5e03\u662f\u5047\u7684</span>}</div>"}, {"index": 40, "class": "opinion_statement", "text": "\u201cwe\u2019ve been called techno-atheist infidels.\u201d", "color": "#C8E6C9", "startPos": 9044, "endPos": 9088, "beforeText": "t\u201d \nand calls the shroud of Turin a fake. Later, speculating his private graveyard might have been \nvandalized by religious extremists, he notes that ", "extractionText": "\u201cwe\u2019ve been called techno-atheist infidels.\u201d", "afterText": " \nIn some ways, The Shrouds embodies a very old debate between tradition and modernity \nor religion and atheism, enacted at multiple levels, not least", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u89d2\u8272\u89c0\u9ede</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u88ab\u7a31\u70ba\u79d1\u6280\u7121\u795e\u8ad6\u7570\u6559\u5f92</span>}</div>"}, {"index": 41, "class": "opinion_statement", "text": "The Shrouds embodies a very old debate between tradition and modernity or religion and atheism", "color": "#C8E6C9", "startPos": 9104, "endPos": 9199, "beforeText": " his private graveyard might have been \nvandalized by religious extremists, he notes that \u201cwe\u2019ve been called techno-atheist infidels.\u201d \nIn some ways, ", "extractionText": "The Shrouds embodies a very old debate between tradition and modernity \nor religion and atheism", "afterText": ", enacted at multiple levels, not least in a seemingly throwaway bit of \ndialogue about the \u201cburial versus cremation\u201d debate: burial being necessary i", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u96fb\u5f71\u4e3b\u984c</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u9ad4\u73fe\u4e86\u50b3\u7d71\u8207\u73fe\u4ee3\u3001\u5b97\u6559\u8207\u7121\u795e\u8ad6\u7684\u53e4\u8001\u8faf\u8ad6</span>}</div>"}, {"index": 42, "class": "opinion_statement", "text": "burial being necessary in the Jewish tradition, while cremation being seen as more ecological and modern.", "color": "#C8E6C9", "startPos": 9325, "endPos": 9431, "beforeText": "\nor religion and atheism, enacted at multiple levels, not least in a seemingly throwaway bit of \ndialogue about the \u201cburial versus cremation\u201d debate: ", "extractionText": "burial being necessary in the Jewish tradition, \nwhile cremation being seen as more ecological and modern.", "afterText": " Cronenberg, wisely, does not presume \nto settle this debate, but simply records how it plays out on an emotional level\u2014through a powerful \ndepiction ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u6587\u5316\u7fd2\u4fd7</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u7336\u592a\u50b3\u7d71\u9700\u8981\u571f\u846c\uff0c\u706b\u846c\u66f4\u74b0\u4fdd\u73fe\u4ee3</span>}</div>"}, {"index": 43, "class": "audience_impact", "text": "a powerful depiction of grief, yes, but also of confusion and anger (at a medical establishment that robs us of our power, among other indignities)", "color": "#D2E3FC", "startPos": 9559, "endPos": 9707, "beforeText": "ecological and modern. Cronenberg, wisely, does not presume \nto settle this debate, but simply records how it plays out on an emotional level\u2014through ", "extractionText": "a powerful \ndepiction of grief, yes, but also of confusion and anger (at a medical establishment that robs us of \nour power, among other indignities", "afterText": ").  And finally, as shown in the last scene of Karsh flying across \nthe ocean towards an uncertain future, there is a glimmer of hopefulness towards w", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">\u60b2\u50b7, \u56f0\u60d1, \u61a4\u6012</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">\u91ab\u7642\u9ad4\u7cfb\u525d\u596a\u6211\u5011\u7684\u6b0a\u529b</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">\u89c0\u773e</span>}</div>"}, {"index": 44, "class": "opinion_statement", "text": "a powerful depiction of grief, yes, but also of confusion and anger", "color": "#C8E6C9", "startPos": 9559, "endPos": 9627, "beforeText": "ecological and modern. Cronenberg, wisely, does not presume \nto settle this debate, but simply records how it plays out on an emotional level\u2014through ", "extractionText": "a powerful \ndepiction of grief, yes, but also of confusion and anger", "afterText": " (at a medical establishment that robs us of \nour power, among other indignities).  And finally, as shown in the last scene of Karsh flying across \nth", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u60c5\u611f\u63cf\u5beb</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u5f37\u70c8\u63cf\u5beb\u60b2\u50b7\u3001\u56f0\u60d1\u548c\u61a4\u6012</span>}</div>"}, {"index": 45, "class": "audience_impact", "text": "as shown in the last scene of Karsh flying across the ocean towards an uncertain future, there is a glimmer of hopefulness towards whatever comes next", "color": "#D2E3FC", "startPos": 9724, "endPos": 9876, "beforeText": "iction of grief, yes, but also of confusion and anger (at a medical establishment that robs us of \nour power, among other indignities).  And finally, ", "extractionText": "as shown in the last scene of Karsh flying across \nthe ocean towards an uncertain future, there is a glimmer of hopefulness towards whatever comes \nnext", "afterText": ". \n \n \n1 Or Dangling subplots and antagonists referred to but never seen, which point to the fact that The Shrouds was written \nto be the pilot for a ", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">\u5e0c\u671b</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">\u6700\u5f8c\u4e00\u5e55\u5361\u4ec0\u98db\u8d8a\u6d77\u6d0b\u5954\u5411\u4e0d\u78ba\u5b9a\u7684\u672a\u4f86</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">\u89c0\u773e</span>}</div>"}, {"index": 46, "class": "opinion_statement", "text": "a glimmer of hopefulness towards whatever comes next", "color": "#C8E6C9", "startPos": 9823, "endPos": 9876, "beforeText": "our power, among other indignities).  And finally, as shown in the last scene of Karsh flying across \nthe ocean towards an uncertain future, there is ", "extractionText": "a glimmer of hopefulness towards whatever comes \nnext", "afterText": ". \n \n \n1 Or Dangling subplots and antagonists referred to but never seen, which point to the fact that The Shrouds was written \nto be the pilot for a ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">\u672a\u4f86\u5c55\u671b</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u4e00\u7dda\u5e0c\u671b</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

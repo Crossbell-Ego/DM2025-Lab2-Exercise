@@ -1,3 +1,4 @@
 IMPORTANT: The script loads your API key from a `.env` file located in this `./config/` directory.
 
 You must first create this file `.env` and add your API key like this: `GOOGLE_API_KEY='YOUR_API_KEY_HERE'`
+
